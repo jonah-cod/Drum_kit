@@ -10,6 +10,12 @@ function getElemens() {
 
 }
 
+document.getElementById("drum").addEventListener("keypress", (e) => {
+    console.log(e.key);
+    playEachSound(e.key)
+})
+
+
 function playSound(sound) {
     let audio = new Audio(sound);
     audio.play();
